@@ -1,5 +1,5 @@
 ##############
-# Auto-Generated : Wed Mar 13 19:14:44 UTC 2024
+# Auto-Generated : Wed Mar 13 19:23:14 UTC 2024
 ##############
 
 apiVersion: apps/v1
@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: astro
-          image: CodeHariK/gitops:7ba087f480913d76933fd0e60fc52bb6f91b06c2
+          image: CodeHariK/gitops:e3a014a3a383b57751b9a4f9302da5fbfd4e417c
           imagePullPolicy: Always
           ports:
             - containerPort: 80
