@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: astro
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: astro
+  template:
+    metadata:
+      labels:
+        app: astro
+    spec:
+      containers:
+        - name: astro
+          image: /gitops:
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 80
