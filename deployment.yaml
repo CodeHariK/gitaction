@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: astro
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: astro
+  template:
+    metadata:
+      labels:
+        app: astro
+    spec:
+      containers:
+        - name: astro
+          image: CodeHariK/gitops:bb6d7bffb8334c40a59dec933c63e4fdd4eb9ec6
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 80
