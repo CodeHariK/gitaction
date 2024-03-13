@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: react-app
+  name: astro
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
-      app: react-app
+      app: astro
   template:
     metadata:
       labels:
-        app: react-app
+        app: astro
     spec:
       containers:
-        - name: react-app
-          image: CodeHariK/gitops:2475369de3fa000cc70a80cea70e64084d872189
+        - name: astro
+          image: ${GITUSER}/gitops:${IMAGE_TAG}
           imagePullPolicy: Always
           ports:
             - containerPort: 80
