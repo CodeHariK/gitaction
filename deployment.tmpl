@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: astro
-          image: ${GITUSER}/gitops:${BUILD}-${IMAGE_TAG}
+          image: ${CONTAINER_REPO}/${IMAGE_NAME}:${BUILD}-${IMAGE_TAG}
           imagePullPolicy: Always
           ports:
             - containerPort: 80
