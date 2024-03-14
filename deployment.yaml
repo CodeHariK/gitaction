@@ -1,11 +1,11 @@
-# Auto-Generated Build:1.0 @ Thu Mar 14 22:13:07 IST 2024
+# Auto-Generated Build:1.0 @ Thu Mar 14 23:37:42 IST 2024
 
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: astro-deploy
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: astro-pod
@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: astro
-          image: ginedecoen/gitops:1.0-8d7f2b74d68a4fed54f4ab1abaa50a11854ad55a
+          image: ginedecoen/gitops:1.0-6b726428c1e2d71029d4d5e9ea202ebdf1826c05
           imagePullPolicy: Always
           ports:
             - containerPort: 80
