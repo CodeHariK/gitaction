@@ -1,7 +1,3 @@
-##############
-# Auto-Generated : ${DATE}
-##############
-
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -18,7 +14,7 @@ spec:
     spec:
       containers:
         - name: astro
-          image: ${GITUSER}/gitops:${IMAGE_TAG}
+          image: ${GITUSER}/gitops:${BUILD}-${IMAGE_TAG}
           imagePullPolicy: Always
           ports:
             - containerPort: 80
