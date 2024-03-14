@@ -5,7 +5,7 @@ kind: Deployment
 metadata:
   name: astro-deploy
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: astro-pod
