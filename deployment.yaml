@@ -1,6 +1,4 @@
-# Auto-Generated : 2024-03-14 06:25:12
-# Build: 1.0
-
+# Auto-Generated : Thu Mar 14 12:04:12 IST 2024 @ Build:1.0
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -17,7 +15,7 @@ spec:
     spec:
       containers:
         - name: astro
-          image: CodeHariK/gitops:1.0-7500bd24bb80ca697e1b614b1dcf3235d05061cd
+          image: CodeHariK/gitops:1.0-38dfc79f4a1886ff2db81360b7d86265ddf60da1
           imagePullPolicy: Always
           ports:
             - containerPort: 80
