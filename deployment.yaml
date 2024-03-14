@@ -1,11 +1,11 @@
-# Auto-Generated Build:1.0 @ Thu Mar 14 18:43:27 IST 2024
+# Auto-Generated Build:1.0 @ Thu Mar 14 21:46:02 IST 2024
 
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: astro
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: astro
@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: astro
-          image: ginedecoen/gitops:1.0-78af7fd75f51cc97d4a14f595f69037ce50695cd
+          image: ginedecoen/gitops:1.0-
           imagePullPolicy: Always
           ports:
             - containerPort: 80
