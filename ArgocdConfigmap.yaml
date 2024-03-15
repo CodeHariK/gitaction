@@ -8,6 +8,5 @@ metadata:
     app.kubernetes.io/part-of: argocd
 data:
   url: "https://argocd-server.argocd.svc"
-  server: |
-    insecure: true
-    grpc: disable
+  server.insecure: "true"
+  server.grpc: "disable"
